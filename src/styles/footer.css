@@ -1,0 +1,60 @@
+footer {
+	min-width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+
+	color: white;
+	background-color: #212529;
+}
+
+#button-scroll-to-top {
+	color: white;
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	outline:none;
+}
+
+.social-networks-nav {
+	display: flex;
+	flex-direction: row;
+
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	list-style: none;
+}
+
+.social-networks-nav-item {
+	flex: 1;
+	font-size: 24px;
+}
+
+.social-networks-nav-link {
+	color: white;
+}
+
+.social-networks-nav-link:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.social-networks-nav-link.youtube:hover {
+	color: #e32c28;
+}
+
+.social-networks-nav-link.twitter:hover {
+	color: #55acee;
+}
+
+.social-networks-nav-link.facebook:hover {
+	color: #43609c;
+}
+
+.social-networks-nav-link.instagram:hover {
+	color: #a37154;
+}
