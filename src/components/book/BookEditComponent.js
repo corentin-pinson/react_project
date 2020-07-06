@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types';
 
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 import BookService from '../../services/BookService'
 import BookFormComponent from './BookFormComponent'
@@ -25,14 +24,14 @@ export default function BookEditComponent(props) {
 	if (book) {
 		return (
 			<>
-				<h1>BookEditComponent</h1>
+				<h1>Book metadata edition</h1>
 				<BookFormComponent defaultBook={book} submitAction={BookService.update} buttonText='Update' />
 			</>
 		);
 	} else {
 		return (
 			<>
-				<h1>BookEditComponent</h1>
+				<h1>Book metadata edition</h1>
 				<span>Waiting for data..</span>
 			</>
 		);

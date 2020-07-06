@@ -1,5 +1,19 @@
-body {
-	margin-top: 130px;
+#container {
+	padding-top: 130px;
+	padding-bottom: 75px;
+	display: block;
+}
+
+#container.day {
+	background-color: #aaaaaa;
+}
+
+#container.night {
+	background-color: #696969;
+}
+
+input {
+	cursor: pointer;
 }
 
 .success {
@@ -8,4 +22,10 @@ body {
 
 .error {
 	color: red;
+}
+
+.line {
+	border-top: 1px solid grey;
+	flex-grow: 1;
+	margin: 0 10px;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 
-export default function BookFormComponent({defaultBook, submitAction, buttonText}) {
+export default function BookFormComponent({defaultBook, submitAction, submitSuccess, buttonText}) {
 
 	const [name, setName] = useState(defaultBook.name);
 	const [description, setDescription] = useState(defaultBook.description);
@@ -18,9 +18,12 @@ export default function BookFormComponent({defaultBook, submitAction, buttonText
 
 		submitAction(defaultBook).then(
 			(data) => {
-				console.log(data);
 				setSuccessMessage('Success!');
 				setErrorMessage('');
+
+				if (submitSuccess) {
+					submitSuccess();
+				}
 			},
 			(error) => {
 				setSuccessMessage('');

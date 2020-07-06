@@ -7,6 +7,13 @@ header {
 	margin-bottom: 0px;
 
 	color: white;
+}
+
+.day header {
+	background-color: #003366;
+}
+
+.night header {
 	background-color: #212529;
 }
 
@@ -37,19 +44,25 @@ ul li * {
 	font-weight: bold;
 }
 
-#lightModeSwitcher {
+ul li .active {
+	color: red;
+}
+
+#themeSwitcher {
 	position: fixed;
 	right: 0;
 
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
+
+	font-weight: bold;
 }
 
-#lightModeSwitcher.day {
+.day #themeSwitcher {
 	color: white;
 }
 
-#lightModeSwitcher.night {
-	color: black;
+.night #themeSwitcher {
+	color: white;
 }

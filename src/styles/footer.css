@@ -10,6 +10,18 @@ footer {
 	background-color: #212529;
 }
 
+.day footer {
+	background-color: #003366;
+}
+
+.night footer {
+	background-color: #212529;
+}
+
+a {
+	color: red;
+}
+
 #button-scroll-to-top {
 	color: white;
 	background-color: Transparent;
